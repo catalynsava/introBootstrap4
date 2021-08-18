@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimization</title>
+    <link rel="stylesheet" href="bootstrap-4.5.3/css/bootstrap.css" />
+
+</head>
+<body>
+    
+   <ul class="list-group" data-list-target>
+        <li class="list-group-item">First Element</li>
+        <li class="list-group-item">...other elements</li>
+        <li class="list-group-item">...other elements</li>
+        <li class="list-group-item">...other elements</li>
+   </ul>
+
+   <div class="btn-group" data-list-template>
+        <button class="btn btn-default drop-down-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Action <span class="caret"></span>
+        </button>
+        <ul class="drop-down-menu">
+            <li><a href="#">Delete</a></li>
+            <li><a href="#">Move</a></li>
+            <li><a href="#">Rename</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Download</a></li>
+        </ul>
+   </div>
+
+    <script src="bootstrap-4.5.3/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap-4.5.3/js/bootstrap.js"></script>
+    <script>
+        $(function(){
+            var template =$( '[data-list-template]' ).hide().clone() ;
+            $( "[data-list-target] li" ).append(
+                $( template ).show()
+            );
+        });
+
+    </script>
+</body>
+</html>

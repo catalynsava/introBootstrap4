@@ -1,0 +1,11 @@
+.clasa1{
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.clasa2{
+    font-weight:bold;
+}
+
+.clasa1, .clasa2 {
+    color: red;
+}
